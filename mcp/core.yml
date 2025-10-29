@@ -1,0 +1,13 @@
+version: 1.0
+project: Scavenger Nomad Automation
+description: |
+  Central Model Control Package for Twitch / PUBG AI automation.
+  Provides tone, structure, and LLM behavior profiles for workflow generation.
+default_model: gpt-5
+brand_profile: styleguide/scavenger_nomad_brand.md
+schema:
+  - schema/workflow_schema.json
+llm_profiles:
+  - llm_profiles/gpt5_planner.yml
+  - llm_profiles/gpt4_jsoncompiler.yml
+  - llm_profiles/claude_validator.yml

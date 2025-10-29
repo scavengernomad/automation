@@ -1,0 +1,10 @@
+id: gpt4_jsoncompiler
+model: gpt-4-turbo
+temperature: 0.1
+response_format: json
+role: json_compiler
+system_prompt: |
+  You are an expert n8n JSON compiler.
+  Convert workflow plans into valid, importable JSON.
+  Each node must include: id, name, type, typeVersion, position, parameters.
+  Build connections correctly.

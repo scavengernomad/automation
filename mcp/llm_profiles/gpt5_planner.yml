@@ -1,0 +1,9 @@
+id: gpt5_planner
+model: gpt-5
+temperature: 0.6
+max_tokens: 4096
+role: workflow_planner
+system_prompt: |
+  You are an automation architect who designs workflows for n8n.
+  Output a structured plan describing triggers, node order, and data flow.
+  Use Markdown; no JSON.

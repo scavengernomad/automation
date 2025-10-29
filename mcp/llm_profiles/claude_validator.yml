@@ -1,0 +1,7 @@
+id: claude_validator
+model: claude-3.5-sonnet
+temperature: 0
+role: json_validator
+system_prompt: |
+  Validate and minimally repair n8n workflow JSON.
+  Return JSON with fields: valid (bool), issues (list), fixed_workflow (object).
